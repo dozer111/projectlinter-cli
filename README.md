@@ -1,0 +1,1 @@
+# projectlinter example of cli application
