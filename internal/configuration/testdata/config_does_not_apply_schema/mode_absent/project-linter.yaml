@@ -1,0 +1,8 @@
+unit: platform
+language: PHP
+ignore:
+  - set1
+  - set2
+  - rule1
+  - rule2
+  - rule3

@@ -1,0 +1,23 @@
+; top-most EditorConfig file
+root = true
+
+; Unix-style newlines
+[*]
+charset = utf-8
+end_of_line = LF
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[**.md]
+max_line_length = 80
+
+[Makefile]
+indent_style = tab
+indent_size = 4
+
+[.helm/**.{yml,yaml}]
+ij_yaml_spaces_within_brackets = false
+ij_yaml_spaces_within_braces = false
+ij_yaml_indent_sequence_value = false
+indent_style = space
+indent_size = 2

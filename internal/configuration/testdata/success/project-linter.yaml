@@ -1,0 +1,7 @@
+unit: platform
+language: PHP
+mode: application
+ignore:
+  - "misc"
+  - "misc.werf_123"
+  - "phpunit"

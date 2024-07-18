@@ -1,0 +1,3 @@
+unit: united-analytics
+language: GO
+mode: library

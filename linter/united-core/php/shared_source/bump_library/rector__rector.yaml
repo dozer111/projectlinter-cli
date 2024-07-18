@@ -1,0 +1,16 @@
+# json-schema: https://github.com/dozer111/projectlinter-core/blob/master/rules/dependency/bump/json-schema.json
+# The full-filled example: https://github.com/dozer111/projectlinter-core/blob/master/rules/dependency/bump/full_correct_example.yaml
+
+name: rector/rector
+version: "1.0"
+responsiblePersons:
+  - dozer111
+examples:
+  - projectName: php-template
+    committee: dozer111
+    links:
+      - https://your_git.com/php-application-template/pull-requests/88/diff
+  - projectName: auth-sv
+    committee: dozer111
+    links:
+      - https://your_git.com/auth-sv/pull-requests/1405/diff

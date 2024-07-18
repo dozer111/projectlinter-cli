@@ -1,0 +1,17 @@
+# json-schema: https://github.com/dozer111/projectlinter-core/blob/master/rules/dependency/bump/json-schema.json
+# The full-filled example: https://github.com/dozer111/projectlinter-core/blob/master/rules/dependency/bump/full_correct_example.yaml
+
+name: doctrine/dbal
+version: "3.0.0"
+description:
+  - "Why not?"
+  - "dbal v2 is an oooooold legacy"
+examples:
+  - projectName: "auth-sv v2=>v3"
+    committee: dozer111
+    links:
+      - https://your_git.com/auth-sv/pull-requests/65/commits/afc2684feff4bfe919d17b03ab19d662aa6621b9
+  - projectName: "payment-sv v1=>v3"
+    committee: onyxia
+    links:
+      - https://your_git.com/payment-sv/pull-requests/65/commits/bfe919d17b03ab19d662aa6621b9afc2684feff4

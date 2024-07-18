@@ -1,0 +1,24 @@
+# json-schema: https://github.com/dozer111/projectlinter-core/blob/master/rules/dependency/substitute/json-schema.json
+# The full-filled example: https://github.com/dozer111/projectlinter-core/blob/master/rules/dependency/substitute/full_example.yaml
+
+name: github.com/mailru/easyjson
+changeTo: github.com/francoispqt/gojay
+description:
+  - "We use both libraries for now"
+  - "And it is more and more harder to maintain both of them in services"
+  - "So we decided to drop easyjson, and use only faster gojay instead"
+  - "The switch is not so easy."
+  - "You need to generate new gojay code via https://github.com/francoispqt/gojay/tree/master/gojay"
+  - "There must be tests on the structures. If it is absent - add"
+responsiblePersons:
+  - mondolorian
+  - eop
+examples:
+  - projectName: auth-sv
+    committee: mondolorian
+    links:
+      - https://your_git.com/auth-sv/pull-requests/91/overview
+  - projectName: yggdrasil-integration-sv
+    committee: eop
+    links:
+      - https://your_git.com/payment-sv/commits/69a1bb1f09cbe5796f95edf7066be46effcd5ffe

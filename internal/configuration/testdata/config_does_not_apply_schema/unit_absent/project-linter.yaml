@@ -1,0 +1,8 @@
+language: PHP
+mode: application
+ignore:
+  - set1
+  - set2
+  - rule1
+  - rule2
+  - rule3
