@@ -1,0 +1,11 @@
+# json-schema: https://github.com/dozer111/projectlinter-core/blob/master/rules/dependency/substitute/json-schema.json
+# The full-filled example: https://github.com/dozer111/projectlinter-core/blob/master/rules/dependency/substitute/full_example.yaml
+
+name: code-tool/doctrine-jaeger-symfony-bridge
+changeTo: code-tool/doctrine-dbal-jaeger
+examples:
+  - projectName: auth-sv
+    committee: dozer111
+    links:
+      - https://your_git.com/auth-sv/commits/c836698e64149412fab971e2252396e9370394f7
+      - https://your_git.com/auth-sv/commits/0ce7f3c9ee28c28d7ec96df459e45b443f3c16b6

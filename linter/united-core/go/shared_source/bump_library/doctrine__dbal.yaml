@@ -1,0 +1,17 @@
+# json-schema: https://github.com/dozer111/projectlinter-core/blob/master/rules/dependency/bump/json-schema.json
+# The full-filled example: https://github.com/dozer111/projectlinter-core/blob/master/rules/dependency/bump/full_correct_example.yaml
+
+name: some-private-git/limit-lb
+version: "3.25.0"
+responsiblePersons:
+  - onyx
+description:
+  - "The library had memory leak."
+  - "3.25 fix it"
+  - "No additional work, just update the version"
+  - "go get -u some-private-git/limit-lb"
+examples:
+  - projectName: auth-sv
+    committee: onyx
+    links:
+      - https://your_git.com/auth-sv/pull-requests/91/overview

@@ -1,0 +1,25 @@
+# json-schema: https://github.com/dozer111/projectlinter-core/blob/master/rules/dependency/substitute/json-schema.json
+# The full-filled example: https://github.com/dozer111/projectlinter-core/blob/master/rules/dependency/substitute/full_example.yaml
+
+name: private-custom-test-library
+changeTo: github.com/testcontainers/testcontainers-go
+description:
+  - "On the tech meeting 2024-05-21 we agreed to stop using our custom test library"
+  - "And instead start to work with github.com/testcontainers/testcontainers-go"
+  - "It do the same things, so no problem at all"
+  - "The switch is easy(see examples)"
+  - ""
+  - "Also, we create task for drop the old library: https://your_jira.com/task-1234"
+responsiblePersons:
+  - dozer111
+  - catLovers
+  - dondo
+examples:
+  - projectName: auth-sv
+    committee: dozer111
+    links:
+      - https://unitedltd_git.com/projects/core/repos/auth-sv/pull-requests/91/overview
+  - projectName: yggdrasil-integration-sv
+    committee: catLovers
+    links:
+      - https://unitedltd_git.com/projects/core/repos/payment-sv/commits/69a1bb1f09cbe5796f95edf7066be46effcd5ffe
