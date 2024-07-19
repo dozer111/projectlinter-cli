@@ -1,5 +1,5 @@
 # json-schema: https://github.com/dozer111/projectlinter-core/blob/master/rules/dependency/bump/json-schema.json
-# The full-filled example: https://github.com/dozer111/projectlinter-core/blob/master/rules/dependency/bump/full_correct_example.yaml
+# The full-filled example: https://github.com/dozer111/projectlinter-core/blob/master/rules/dependency/bump/full_example.yaml
 
 name: symfony/flex
 version: "2.0"
