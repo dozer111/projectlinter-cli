@@ -12,3 +12,7 @@ package shared_source
 //
 // Because most likely you take some application-tpl template as an example for application, respectively for library - library-tpl
 // Accordingly, the references to the files(and maybe actually the files) for reconciliation in CVS will be different
+
+// The full-filled examples:
+// substitute => https://github.com/dozer111/projectlinter-core/blob/master/rules/dependency/substitute/full_example.yaml
+// bump => https://github.com/dozer111/projectlinter-core/blob/master/rules/dependency/bump/full_example.yaml
