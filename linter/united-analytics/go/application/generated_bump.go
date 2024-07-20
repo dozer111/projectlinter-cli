@@ -8,27 +8,4 @@ import (
 	"github.com/dozer111/projectlinter-core/rules/dependency/bump"
 )
 
-var bumpLibraryConfigs = []bump.Library{
-	{
-		Name:    "some-private-git/limit-lb",
-		Version: "3.25.0",
-		Description: []string{
-			"The library had memory leak.",
-			"3.25 fix it",
-			"No additional work, just update the version",
-			"go get -u some-private-git/limit-lb",
-		},
-		ResponsiblePersons: []string{
-			"onyx",
-		},
-		Examples: []bump.Example{
-			{
-				ProjectName: "auth-sv",
-				Programmer:  "onyx",
-				Links: []string{
-					"https://your_git.com/auth-sv/pull-requests/91/overview",
-				},
-			},
-		},
-	},
-}
+var bumpLibraryConfigs = []bump.Library{}
