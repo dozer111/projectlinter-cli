@@ -77,6 +77,7 @@ So, you just ignore it. And I understand this pain. What if I can help you with 
 Is it possible? - with `projectlinter` - yes
 
 You can share all the knowledge about the libraries, and it would be as easy, as newer before
+
 For example:
 
 
@@ -102,7 +103,7 @@ Easy? - easy
 
 As a creator of it I understand that the problem which `projectlinter` solves is big and complex. So, you need some time to investigate the code.
 
-So yes, spend some time to meet and understand it - and your company gain a big boost with obsolescence configuration/dependency problems
+So yes, spend some time to understand it - and your company gain a big boost with obsolescence configuration/dependency problems
 
 ## How to projectlinter?
 
