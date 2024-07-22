@@ -1,0 +1,50 @@
+# This workflow will build a golang project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-go
+
+name: Go
+
+on:
+  push:
+    branches: [ "master" ]
+    paths-ignore:
+      - 'docs/**'
+      - 'README.md'
+  pull_request:
+    paths-ignore:
+      - 'docs/**'
+      - 'README.md'
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Go
+      uses: actions/setup-go@v4
+      with:
+        go-version: '1.22'
+
+    - name: Build
+      run: go build -v ./...
+
+    - name: Test
+      run: go test -race -count 1 -v ./...
+
+      # this step is crutial for projectlinter
+      # it is related to dependency rules
+      # when the contibutor add the bump or substitute dependency - we must be sure that he also do go generate 
+      # otherwise this dependencies would not be checked
+    - name: Run go generate
+      run: go generate ./...
+
+    - name: Check for uncommitted changes
+      run: |
+        if [[ $(git status --porcelain) ]]; then
+          echo "Uncommitted changes found after running go generate"
+          git diff
+          exit 1
+        else
+          echo "No changes detected after running go generate"
+        fi
