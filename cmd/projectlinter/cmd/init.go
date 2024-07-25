@@ -96,13 +96,16 @@ func NewInitCommand() *cobra.Command {
 			}
 			defer file.Close()
 
-			b, err := yaml.Marshal(config)
+			newConfig, err := yaml.Marshal(config)
 			if err != nil {
 				fmt.Println("Cannot marshal config to yaml")
 				os.Exit(1)
 			}
 
-			_, err = file.Write(b)
+			newConfigAsString := string(newConfig)
+			newConfigAsString = fmt.Sprintf("%s#ignore:\n#  - rule1_id\n#  - rule2_id\n#  - rule3_id\n", newConfigAsString)
+
+			_, err = file.Write([]byte(newConfigAsString))
 			if err != nil {
 				fmt.Println("Error writing to file:", err)
 				os.Exit(1)
